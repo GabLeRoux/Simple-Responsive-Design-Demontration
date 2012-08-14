@@ -1,0 +1,8 @@
+/* styles for desktop */
+.tinynav { display: none }
+
+/* styles for mobile */
+@media screen and (max-width: 600px) {
+    .js .tinynav { display: block; width: 100%; margin: 20px 0;}
+    .js #mainmenu { display: none }
+}

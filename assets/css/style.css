@@ -1,0 +1,99 @@
+@import 'reset.css';
+@import 'text.css';
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+	background: #fff url(../images/background.png) repeat;
+	color: #333;
+}
+
+h1 {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 90px 10px 15px;
+	text-shadow: #fff 0 1px 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: 1;
+}
+
+a {
+	color: #06c;
+}
+
+a:hover {
+	color: #c60;
+}
+
+small {
+	font-size: 11px;
+}
+
+.separator {
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	height:1px;
+}
+
+.align-left {
+	float: left;
+}
+
+.align-right {
+	float: right;
+}
+
+#footer {
+	margin:20px;
+}
+
+ul#mainmenu {
+	font-size: 18px;
+	margin-bottom: 40px;
+	padding: 6px 0 6px 6px;
+	list-style: none;
+	float: left;
+	width: 100%;
+	text-align: left;
+	background: #2F2F2F;
+	background: rgba(0, 0, 0, .60);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.8);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.8);
+	box-shadow: 0 1px 2px rgba(0,0,0,.8);
+}
+
+ul#mainmenu li {
+	display: block;
+	float: left;
+	margin-right: 2px;
+}
+
+ul#mainmenu li a.active , ul#mainmenu  a.selected:hover {
+background: #4D4D4D;
+background: rgba(0, 0, 0, .75);
+color: white;
+font-weight: bold;
+}
+
+ul#mainmenu li a, ul#mainmenu li a:hover {
+	padding: 0 15px;
+	line-height: 36px;
+	display: block;
+	float: left;
+	text-decoration: none;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 0;
+	color: #CCC;
+	border-image: initial;
+}

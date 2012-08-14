@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<meta name="author" content="Nathan Smith" />
+<meta name="copyright" content="Licensed under GPL and MIT." />
+<meta name="description" content="Adapt.js serves CSS based on screen width." />
+<title>Simple Responsive Design Demontration</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/jquery-ui-1.8.22.custom.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/lightbox.min.css" />
+<link rel="stylesheet" type="text/css" href="assets/css/tinynav.css" />
+<noscript>
+<link rel="stylesheet" type="text/css" href="assets/css/mobile.min.css" />
+</noscript>
+<script>
+// Edit to suit your needs.
+var ADAPT_CONFIG = {
+  // Where is your CSS?
+  path: 'assets/css/',
+
+  // false = Only run once, when page first loads.
+  // true = Change on window resize and page tilt.
+  dynamic: true,
+
+  // First range entry is the minimum.
+  // Last range entry is the maximum.
+  // Separate ranges by "to" keyword.
+  range: [
+    '0px    to 760px  = mobile.min.css',
+    '760px  to 980px  = 720.min.css',
+    '980px            = 960.min.css'
+  ]
+};
+</script>
+<script src="assets/js/adapt.min.js"></script>
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css"></script>-->
+<script src="assets/js/jquery-1.7.2.min.js"></script>
+<script src="assets/js/jquery-ui-1.8.22.custom.min.js"></script>
+
+<script src="assets/js/jquery.flexslider.min.js"></script>
+
+<script src="assets/js/jquery-ui.rlightbox.min.js"></script>
+
+<script src="assets/js/tinynav.min.js"></script>
+
+<script type="text/javascript">
+  // Will define if javascript is enabled or not :)
+  $('html').addClass('js');
+</script>
+
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flexslider').flexslider({
+      animation: "fade",
+    });
+  });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+  $( ".lb_cakes" ).rlightbox();
+    });
+</script>
+
+<script>
+  $(function () {
+    $("#mainmenu").tinyNav({
+    active: 'active', // Set the "active" class
+    header: false // Show header instead of the active item
+});
+  });
+</script>
+
+</head>
+<body>
+<div class="container_12">
+  <div class="grid_12">
+    <h1>
+      <b>Simple Responsive Design Demontration, a taste of scripts</b>
+      <br />
+      <small><i>Resize the screen or view this page on a mobile</i></small>
+    </h1>
+    <ul id="mainmenu">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">Blog post</a></li>
+      <li><a href="#">GitHub repo</a></li>
+      <li><a href="#">Another link</a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+  <div class="grid_7">
+    <h2>
+      The Slider
+    </h2>
+  <section class="slider">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <a href="assets/images/kitchen_adventurer_cheesecake_brownie.jpg" title="kitchen adventurer cheesecake brownie" class="lb_cakes"><img src="assets/images/kitchen_adventurer_cheesecake_brownie.jpg" /></a>
+          </li>
+          <li>
+            <a href="assets/images/kitchen_adventurer_lemon.jpg" title="kitchen adventurer lemon" class="lb_cakes"><img src="assets/images/kitchen_adventurer_lemon.jpg" /></a>
+          </li>
+          <li>
+            <a href="assets/images/kitchen_adventurer_donut.jpg" title="kitchen adventurer donut" class="lb_cakes"><img src="assets/images/kitchen_adventurer_donut.jpg" /></a>
+          </li>
+          <li>
+            <a href="assets/images/kitchen_adventurer_caramel.jpg" title="kitchen adventurer caramel" class="lb_cakes"><img src="assets/images/kitchen_adventurer_caramel.jpg" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>    
+  </div>
+  <div class="grid_5">
+     <h2>
+      What is this?
+    </h2>
+    <p>
+      <a href="http://adapt.960.gs/">Adapt.js</a> is a lightweight (848 bytes minified) JavaScript file that determines which CSS file to load before the browser renders a page. If the browser tilts or resizes, Adapt.js simply checks its width, and serves only the CSS that is needed, when it is needed. 960gs is released under GPL and MIT license.
+    </p>
+    <p>
+     <a href="http://www.woothemes.com/flexslider/">Flexslider</a> is probably one of the best responsive slider out there, try it, it will blow your mind and guess what, it's under the MIT license!.
+    </p>
+    <p>
+      <a href="http://ryrych.github.com/rlightbox2/">rLightbox</a> development is discontinued at the moment but it's a damn good responsive lightbox and it's also under the MIT license :).
+    </p>
+    <p>
+      <a href="http://tinynav.viljamis.com/">TinyNav</a> is a cool responsive menu that will transform a list of link (navigation) into a select box for mobile device at low size. It rocks and it's also released under the MIT license!
+    </p>
+  </div>
+  <div class="clear"></div>
+
+  <div class="separator"></div>
+
+  <div id="footer">
+    <span class="align-left">Copyright - Gabriel Le Breton</span>
+    <span class="align-right">Hope you see the power of Responsive design now.</div>
+</div>
+</body>
+</html>
