@@ -5,6 +5,9 @@ a taste of responsive scripts
 
 See it in action
 ----------------
+
+![Simple-Responsive-Design-Demontration preview](https://raw.github.com/GabLeRoux/Simple-Responsive-Design-Demontration/master/preview.jpg)
+
 A link to gh-pages will be added soon (I have to make the branch and sync, blabla, I'll do it soon)
 
 Usage
