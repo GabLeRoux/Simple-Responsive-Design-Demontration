@@ -14,6 +14,12 @@ Simply download, extract and open index file in a web browser. Ultimatly, you co
 
 Read the code and see how easy it is to make a responsive design with those tools!
 
+Todo
+----
+* Add more scripts and cool tricks with jQuery-ui
+* Add lavalamp menu navigation (files already there)
+* Add list of used scripts in this readme for quick access
+
 Credits
 -------
 All scripts used in the little demo or all trademarks are the property of their respective owners, most of them are on the MIT licence, use as provided.
