@@ -16,6 +16,6 @@ Read the code and see how easy it is to make a responsive design with those tool
 
 Credits
 -------
-All scripts used in the little demo are the propriety of their authors, most of them are on the MIT licence, use as provided.
+All scripts used in the little demo or all trademarks are the property of their respective owners, most of them are on the MIT licence, use as provided.
 
 Enjoy
