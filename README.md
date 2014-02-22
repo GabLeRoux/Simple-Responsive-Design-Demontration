@@ -21,7 +21,6 @@ Todo
 ----
 * Add more scripts and cool tricks with jQuery-ui
 * Add lavalamp menu navigation (files already there)
-* Add list of used scripts in this readme for quick access
 
 Credits
 -------
